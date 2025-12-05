@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - Arquitectura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="unidades.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-menu">
+                <a href="Index.html" class="nav-link">Inicio</a>
+                <a href="Unidad1.html" class="nav-link active">Unidad 1</a>
+                <a href="Unidad2.html" class="nav-link">Unidad 2</a>
+                <a href="Unidad3.html" class="nav-link">Unidad 3</a>
+                <a href="Unidad4.html" class="nav-link">Unidad 4</a>
+                <a href="Practicas.html" class="nav-link">Prácticas</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content-wrapper fade-in">
+        <h1>Unidad 1: Arquitectura de Computadoras</h1>
+
+        <!-- Sección 1.1 -->
+        <section id="1.1" class="content-section slide-in-left">
+            <h2>1.1 Modelos de Arquitectura de Cómputo</h2>
+            <p>
+                La arquitectura de computadoras es el diseño y la organización de un sistema para un equipo de cómputo.
+                Es un modelo y descripción de cada función, así como los requerimientos y las implementaciones de diseño para
+                varias partes del equipo de cómputo.
+            </p>
+            <img src="Images/modelodearquitectura.jpg" alt="Modelo de Arquitectura de Cómputo">
+        </section>
+
+        <!-- Sección 1.1.1 -->
+        <section id="1.1.1" class="content-section">
+            <h2>1.1.1 Clásicas</h2>
+            <p>
+                Estas arquitecturas se desarrollaron en las primeras computadoras electromecánicas y de tubos de vacío.
+                Hay dos arquitecturas distintas relacionadas con el uso y distribución de la memoria: Arquitectura de
+                John Von Neumann y Arquitectura Harvard.
+            </p>
+            <img src="Images/clasicas.jpg" alt="Arquitecturas Clásicas">
+        </section>
+
+        <!-- Sección 1.1.2 -->
+        <section id="1.1.2" class="content-section">
+            <h2>1.1.2 Segmentadas</h2>
+            <p>
+                Es una de las tecnologías utilizadas para realizar la segmentación o paralelismo. Divide el procesador
+                en etapas, procesa una instrucción diferente en cada una y trabaja con varias a la vez.
+                La técnica de implementación clave utilizada para hacer CPU es el pipelining (entubamiento).
+            </p>
+            <p>
+                La segmentación de cauce permite descomponer el proceso de ejecución de las instrucciones en fases o 
+                etapas que permitan una ejecución simultánea. Las etapas están conectadas formando una especie de cauce 
+                donde las instrucciones entran por un extremo, son procesadas a través de las etapas y salen por el otro.
+            </p>
+            <img src="Images/segmentadas.jpg" alt="Arquitecturas Segmentadas">
+        </section>
+
+        <!-- Sección 1.1.3 -->
+        <section id="1.1.3" class="content-section">
+            <h2>1.1.3 De Multiprocesamiento</h2>
+            <p>
+                Se denomina multiprocesador a un computador que cuenta con dos o más microprocesadores (CPUs).
+                Existen dos tipos principales de arquitecturas:
+            </p>
+            <ul>
+                <li><strong>Arquitectura NUMA:</strong> Donde cada procesador tiene acceso y control exclusivo a una parte de la memoria</li>
+                <li><strong>Arquitectura SMP:</strong> Donde todos los procesadores comparten toda la memoria</li>
+            </ul>
+
+            <h3>Clasificación según Flynn:</h3>
+            <ul>
+                <li><strong>SISO:</strong> (Single Instruction, Single Operand) computadoras monoprocesador</li>
+                <li><strong>SIMO:</strong> (Single Instruction, Multiple Operand) procesadores vectoriales, extensiones MMX</li>
+                <li><strong>MISO:</strong> (Multiple Instruction, Single Operand) No implementado</li>
+                <li><strong>MIMO:</strong> (Multiple Instruction, Multiple Operand) sistemas SMP, Clusters, GPUs</li>
+            </ul>
+            <img src="Images/multi1.jpg" alt="Arquitecturas de Multiprocesamiento">
+        </section>
+
+        <!-- Sección 1.2 -->
+        <section id="1.2" class="content-section">
+            <h2>1.2 Análisis de los Componentes</h2>
+            <p>
+                Los programas cada vez más grandes y complejos demandan mayor velocidad en el procesamiento de
+                información, lo que implica la elección de microprocesadores más rápidos y eficientes.
+            </p>
+            <img src="Images/analisis.jpg" alt="Análisis de Componentes">
+        </section>
+    </div>
+</body>
+
+</html>
